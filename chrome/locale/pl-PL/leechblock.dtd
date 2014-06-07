@@ -3,8 +3,8 @@
 <!ENTITY	menu.lockdown				"Lockdown…">
 <!ENTITY	menu.instantLockdown				"Start lockdown now">
 <!ENTITY	menu.options				"Options…">
-<!ENTITY	menu.stats					"Statistics…">
-<!ENTITY	menu.addThisSiteLabel		"Add $S to $B">
+<!ENTITY	menu.stats					"Statystyki…">
+<!ENTITY	menu.addThisSiteLabel		"Dodaj $S do $B">
 <!ENTITY	toolbar.timeLeft			"LeechBlock Time Left">
 <!ENTITY	tooltip.timeLeft			"Shows time left before this site is blocked">
 <!ENTITY	warning.title				"LeechBlock Warning">
@@ -14,9 +14,9 @@
 <!ENTITY	options.title				"LeechBlock Options">
 <!ENTITY	options.accessTabLabel		"Access Control">
 <!ENTITY	options.generalTabLabel		"General">
-<!ENTITY	options.whatBlockTabLabel	"What to Block">
-<!ENTITY	options.whenBlockTabLabel	"When to Block">
-<!ENTITY	options.howBlockTabLabel	"How to Block">
+<!ENTITY	options.whatBlockTabLabel	"Co blokować">
+<!ENTITY	options.whenBlockTabLabel	"Kiedy blokować">
+<!ENTITY	options.howBlockTabLabel	"Jak blokować">
 <!ENTITY	options.advancedTabLabel	"Advanced">
 <!ENTITY	options.backLabel			"&lt; Back">
 <!ENTITY	options.nextLabel			"Next &gt;">
@@ -38,27 +38,28 @@
 <!ENTITY	options.minsInEveryDesc		"minutes in every">
 <!ENTITY	options.quarterHourMenuItem	"quarter-hour (15 mins)">
 <!ENTITY	options.halfHourMenuItem	"half-hour (30 mins)">
-<!ENTITY	options.hourMenuItem		"hour">
-<!ENTITY	options.twoHoursMenuItem	"2 hours">
-<!ENTITY	options.threeHoursMenuItem	"3 hours">
-<!ENTITY	options.fourHoursMenuItem	"4 hours">
+<!ENTITY	options.halfHourMenuItem	"pół godziny (30 min.)">
+<!ENTITY	options.hourMenuItem		"godzina">
+<!ENTITY	options.twoHoursMenuItem	"2 godziny">
+<!ENTITY	options.threeHoursMenuItem	"3 godziny">
+<!ENTITY	options.fourHoursMenuItem	"4 godziny">
 <!ENTITY	options.sixHoursMenuItem	"6 hours">
-<!ENTITY	options.halfDayMenuItem		"half-day (12 hours)">
-<!ENTITY	options.dayMenuItem			"day (24 hours)">
-<!ENTITY	options.twoDaysMenuItem		"2 days (48 hours)">
-<!ENTITY	options.weekMenuItem		"week (7 days)">
+<!ENTITY	options.halfDayMenuItem		"pół dnia (12 godzin)">
+<!ENTITY	options.dayMenuItem			"dzień (24 godziny)">
+<!ENTITY	options.twoDaysMenuItem		"2 dni (48 godzin)">
+<!ENTITY	options.weekMenuItem		"tydzień (7 dni)">
 <!ENTITY	options.alertBadTimeLimit	"Please enter the time limit in the correct format (as a positive whole number).">
 <!ENTITY	options.modeDesc			"Select when to block these sites:">
 <!ENTITY	options.modeOrLabel			"within time periods OR after time limit">
 <!ENTITY	options.modeAndLabel		"within time periods AND after time limit">
 <!ENTITY	options.daysDesc			"Select the days on which to block these sites:">
-<!ENTITY	options.dayLabel0			"Sun">
-<!ENTITY	options.dayLabel1			"Mon">
-<!ENTITY	options.dayLabel2			"Tue">
-<!ENTITY	options.dayLabel3			"Wed">
-<!ENTITY	options.dayLabel4			"Thu">
-<!ENTITY	options.dayLabel5			"Fri">
-<!ENTITY	options.dayLabel6			"Sat">
+<!ENTITY	options.dayLabel0			"Pon.">
+<!ENTITY	options.dayLabel1			"Wt.">
+<!ENTITY	options.dayLabel2			"Śr.">
+<!ENTITY	options.dayLabel3			"Czw.">
+<!ENTITY	options.dayLabel4			"Pt.">
+<!ENTITY	options.dayLabel5			"Sob.">
+<!ENTITY	options.dayLabel6			"Niedz.">
 <!ENTITY	options.everyDayLabel		"Every Day">
 <!ENTITY	options.howBlockDesc		"Step 3: Specify how you want to block these sites.">
 <!ENTITY	options.blockDesc			"Enter the fully specified URL of the page to show instead of these blocked sites:">
@@ -67,7 +68,7 @@
 <!ENTITY	options.defaultPageLabel	"Default Page">
 <!ENTITY	options.delayingPageLabel	"Delaying Page">
 <!ENTITY	options.blankPageLabel		"Blank Page">
-<!ENTITY	options.homePageLabel		"Home Page">
+<!ENTITY	options.homePageLabel		"Strona domowa">
 <!ENTITY	options.activeBlockLabel	"Actively block pages on these sites once time period is entered or time limit is exceeded">
 <!ENTITY	options.countFocusLabel		"Count time spent on these sites only when browser tab is active">
 <!ENTITY	options.delaySecsDesc1		"Delay access to sites by">
