@@ -114,6 +114,26 @@ function LeechBlock_lockdownOK() {
 	return true;
 }
 
+// Starts a lockdown
+function LeechBlock_startInstantLockdown() {
+	var duration = LeechBlock_getIntPref("lockdownDuration");
+	var sets = LeechBlock_getIntPref("lockdownSets");
+
+	// Set component values
+	var hours = Math.floor(duration / 3600);
+	var mins = Math.floor(duration / 60) % 60;
+	document.getElementById("lb-lockdown-hours").value = hours;
+	document.getElementById("lb-lockdown-mins").value = mins;
+	for (var set = 1; set <= 6; set++) {
+		var lockdown = (sets & (1 << (set - 1))) != 0;
+		document.getElementById("lb-lockdown-set" + set).checked = lockdown;
+		document.getElementById("lb-lockdown-set" + set).label += " "
+				+ LeechBlock_getLockdownBlockSetLabel(set);
+	}
+
+	return true;
+}
+
 // Handles lockdown dialog Cancel button
 //
 function LeechBlock_lockdownCancel() {
