@@ -1,14 +1,16 @@
 <!ENTITY	leechblock					"LeechBlock">
-<!ENTITY	blockSet					"Block Set">
-<!ENTITY	menu.lockdown				"Lockdown…">
-<!ENTITY	menu.instantLockdown				"Start lockdown now">
+<!ENTITY	blockSet					"Zestaw blokad">
+<!ENTITY	menu.lockdown				"Blokada…">
+<!ENTITY	menu.instantLockdown				"Zacznij blokadę">
 <!ENTITY	menu.options				"Options…">
 <!ENTITY	menu.stats					"Statystyki…">
 <!ENTITY	menu.addThisSiteLabel		"Dodaj $S do $B">
 <!ENTITY	toolbar.timeLeft			"LeechBlock Time Left">
 <!ENTITY	tooltip.timeLeft			"Shows time left before this site is blocked">
-<!ENTITY	warning.title				"LeechBlock Warning">
+<!ENTITY	warning.title				"Ostrzeżenie LeechBlock">
 <!ENTITY	warning.alertBlock			"Sites in $B will be blocked in $S seconds.">
+<!--TODO: does this i18n framework support proper pluralization?-->
+<!ENTITY	warning.alertBlock			"Strony w zestawie $B będą zablokowane za $S sekund.">
 <!ENTITY	options.passwordPrompt		"Enter the password for access to options:">
 <!ENTITY	options.accessCodePrompt	"Enter the following code for access to options:">
 <!ENTITY	options.title				"LeechBlock Options">
@@ -36,8 +38,7 @@
 <!ENTITY	options.timeLimitDesc		"Enter a time limit after which to block these sites:">
 <!ENTITY	options.timeLimitTooltip	"Leave blank for no time limit">
 <!ENTITY	options.minsInEveryDesc		"minutes in every">
-<!ENTITY	options.quarterHourMenuItem	"quarter-hour (15 mins)">
-<!ENTITY	options.halfHourMenuItem	"half-hour (30 mins)">
+<!ENTITY	options.quarterHourMenuItem	"kwadrans (15 min.)">
 <!ENTITY	options.halfHourMenuItem	"pół godziny (30 min.)">
 <!ENTITY	options.hourMenuItem		"godzina">
 <!ENTITY	options.twoHoursMenuItem	"2 godziny">
@@ -60,26 +61,27 @@
 <!ENTITY	options.dayLabel4			"Pt.">
 <!ENTITY	options.dayLabel5			"Sob.">
 <!ENTITY	options.dayLabel6			"Niedz.">
-<!ENTITY	options.everyDayLabel		"Every Day">
+<!ENTITY	options.everyDayLabel		"Codziennie">
 <!ENTITY	options.howBlockDesc		"Step 3: Specify how you want to block these sites.">
 <!ENTITY	options.blockDesc			"Enter the fully specified URL of the page to show instead of these blocked sites:">
 <!ENTITY	options.blockTooltip		"Use $U to pass URL of blocked page">
 <!ENTITY	options.predefinedURLs		"Predefined URLs:">
-<!ENTITY	options.defaultPageLabel	"Default Page">
+<!ENTITY	options.defaultPageLabel	"Domyślna strona">
 <!ENTITY	options.delayingPageLabel	"Delaying Page">
-<!ENTITY	options.blankPageLabel		"Blank Page">
+<!ENTITY	options.blankPageLabel		"Pusta strona">
 <!ENTITY	options.homePageLabel		"Strona domowa">
 <!ENTITY	options.activeBlockLabel	"Actively block pages on these sites once time period is entered or time limit is exceeded">
 <!ENTITY	options.countFocusLabel		"Count time spent on these sites only when browser tab is active">
-<!ENTITY	options.delaySecsDesc1		"Delay access to sites by">
-<!ENTITY	options.delaySecsDesc2		"seconds when delaying page is used">
-<!ENTITY	options.advancedWarnDesc1	"Warning!">
+<!--TODO glue into one message-->
+<!ENTITY	options.delaySecsDesc1		"Opóźnij dostęp do stron o">
+<!ENTITY	options.delaySecsDesc2		"sekund, gdy jest używana strona z opóźnieniem.">
+<!ENTITY	options.advancedWarnDesc1	"Uwaga!">
 <!ENTITY	options.advancedWarnDesc2	"Be sure you understand the consequences of these options before selecting any of them.">
-<!ENTITY	options.accessControlLabel	"Access Control">
+<!ENTITY	options.accessControlLabel	"Kontrola dostępu">
 <!ENTITY	options.prevOptsLabel		"Prevent access to options for this block set at times when these sites are blocked">
 <!ENTITY	options.prevAddonsLabel		"Prevent access to about:addons at times when these sites are blocked">
 <!ENTITY	options.prevConfigLabel		"Prevent access to about:config at times when these sites are blocked">
-<!ENTITY	options.lockdownLabel		"Lockdown">
+<!ENTITY	options.lockdownLabel		"Blokada">
 <!ENTITY	options.cancelLockdownLabel	"Cancel Currently Active Lockdown">
 <!ENTITY	options.confCancelLockdown	"Are you sure you want to cancel the currently active lockdown for this block set?">
 <!ENTITY	options.optionsAccessLabel	"Options Access">
@@ -96,6 +98,7 @@
 <!ENTITY	options.hideExtension		"Hide LeechBlock extension in Add-ons Manager">
 <!ENTITY	options.hideSafeMode		"Hide &quot;Restart with Add-ons Disabled…&quot; menu item (restart browser to apply new setting)">
 <!ENTITY	options.miscLabel			"Miscellaneous">
+<!--TODO glue into one message-->
 <!ENTITY	options.warnMessageDesc1	"Display warning message">
 <!ENTITY	options.warnMessageDesc2	"seconds before site is blocked">
 <!ENTITY	options.warnMessageTooltip	"Leave blank for no warning message">
