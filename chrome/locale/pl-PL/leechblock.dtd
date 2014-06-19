@@ -82,7 +82,7 @@
 <!ENTITY	options.prevAddonsLabel		"Prevent access to about:addons at times when these sites are blocked">
 <!ENTITY	options.prevConfigLabel		"Prevent access to about:config at times when these sites are blocked">
 <!ENTITY	options.lockdownLabel		"Blokada">
-<!ENTITY	options.cancelLockdownLabel	"Cancel Currently Active Lockdown">
+<!ENTITY	options.cancelLockdownLabel	"Anuluj aktualną blokadę">
 <!ENTITY	options.confCancelLockdown	"Are you sure you want to cancel the currently active lockdown for this block set?">
 <!ENTITY	options.optionsAccessLabel	"Options Access">
 <!ENTITY	options.accessDesc			"Select the requirement for access to options:">
@@ -92,15 +92,15 @@
 <!ENTITY	options.accessMenuItem3		"Require the user to enter a random 64-character access code">
 <!ENTITY	options.accessMenuItem4		"Require the user to enter a random 128-character access code">
 <!ENTITY	options.passwordDesc		"Enter the password for access to options:">
-<!ENTITY	options.clearPasswordLabel	"Clear Password">
+<!ENTITY	options.clearPasswordLabel	"Wyczyść hasło">
 <!ENTITY	options.hidePasswordLabel	"Hide password characters when entered at prompt">
 <!ENTITY	options.browserModsLabel	"Browser Modifications">
 <!ENTITY	options.hideExtension		"Hide LeechBlock extension in Add-ons Manager">
 <!ENTITY	options.hideSafeMode		"Hide &quot;Restart with Add-ons Disabled…&quot; menu item (restart browser to apply new setting)">
-<!ENTITY	options.miscLabel			"Miscellaneous">
+<!ENTITY	options.miscLabel			"Różne">
 <!--TODO glue into one message-->
-<!ENTITY	options.warnMessageDesc1	"Display warning message">
-<!ENTITY	options.warnMessageDesc2	"seconds before site is blocked">
+<!ENTITY	options.warnMessageDesc1	"Wyświetl ostrzeżenie na">
+<!ENTITY	options.warnMessageDesc2	"sekund przed zablokowaniem strony.">
 <!ENTITY	options.warnMessageTooltip	"Leave blank for no warning message">
 <!ENTITY	options.alertBadSeconds		"Please enter the number of seconds in the correct format (as a positive whole number).">
 <!ENTITY	options.showTimeLeftLabel	"Show time left before site is blocked in status bar">
@@ -109,19 +109,19 @@
 <!ENTITY	options.hideContMenuLabel	"Hide LeechBlock context menu (restart browser to apply new setting)">
 <!ENTITY	options.hideTimeLeftLabel	"Hide &quot;LeechBlock Time Left&quot; toolbar item when inactive">
 <!ENTITY	options.exportImportLabel	"Export / Import">
-<!ENTITY	options.exportOptionsLabel	"Export Options">
-<!ENTITY	options.importOptionsLabel	"Import Options">
-<!ENTITY	options.openVersionHistory	"Version History">
+<!ENTITY	options.exportOptionsLabel	"Eksportuj opcje">
+<!ENTITY	options.importOptionsLabel	"Importuj opcje">
+<!ENTITY	options.openVersionHistory	"Historia wersji">
 <!ENTITY	options.openHomePage		"Home Page">
-<!ENTITY	options.openExamplesPage	"Examples">
-<!ENTITY	options.openFAQPage			"FAQ">
-<!ENTITY	options.supportLeechBlock	"Support LeechBlock">
-<!ENTITY	stats.title					"LeechBlock Statistics">
+<!ENTITY	options.openExamplesPage	"Przykłady">
+<!ENTITY	options.openFAQPage			"Często zadawane pytania">
+<!ENTITY	options.supportLeechBlock	"Wspomóż wtyczkę LeechBlock">
+<!ENTITY	stats.title					"Statystyki wtyczki LeechBlock">
 <!ENTITY	stats.startTimeLabel		"Start Date/Time">
 <!ENTITY	stats.totalTimeLabel		"Total Time Spent">
 <!ENTITY	stats.perDayTimeLabel		"Time Spent Per Day">
 <!ENTITY	stats.timeLeftLabel			"Time Left in Limit Period">
-<!ENTITY	stats.naLabel				"N/A">
+<!ENTITY	stats.naLabel				"N/D">
 <!ENTITY	stats.restartAllLabel		"Restart All">
 <!ENTITY	stats.restartLabel			"Restart">
 <!ENTITY	lockdown.title				"LeechBlock Lockdown">
