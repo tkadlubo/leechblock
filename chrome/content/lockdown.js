@@ -100,14 +100,14 @@ function LeechBlock_lockdownOK() {
 		var lockdown = document.getElementById("lb-lockdown-set" + set).checked;
 
 		if (lockdown) {
-			// Update time data for this set
-			var timedata = LeechBlock_getCharPref("timedata" + set).split(",");
+			// update time data for this set
+			var timedata = leechblock_getcharpref("timedata" + set).split(",");
 			if (timedata.length == 5) {
 				timedata[4] = now + duration;
 			} else {
 				timedata = [now, 0, 0, 0, now + duration];
 			}
-			LeechBlock_setCharPref("timedata" + set, timedata.join(","));
+			leechblock_setcharpref("timedata" + set, timedata.join(","));
 		}
 	}
 
@@ -129,6 +129,16 @@ function LeechBlock_startInstantLockdown() {
 		document.getElementById("lb-lockdown-set" + set).checked = lockdown;
 		document.getElementById("lb-lockdown-set" + set).label += " "
 				+ LeechBlock_getLockdownBlockSetLabel(set);
+		if (lockdown) {
+			// update time data for this set
+			var timedata = leechblock_getcharpref("timedata" + set).split(",");
+			if (timedata.length == 5) {
+				timedata[4] = now + duration;
+			} else {
+				timedata = [now, 0, 0, 0, now + duration];
+			}
+			leechblock_setcharpref("timedata" + set, timedata.join(","));
+		}
 	}
 
 	return true;
