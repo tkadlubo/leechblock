@@ -6,7 +6,7 @@
 <dialog id="lb-lockdown-dialog" title="&lockdown.title;"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	buttons="accept,cancel" defaultButton="accept"
-	onload="LeechBlock_lockdownInit();"
+	onload="LeechBlock_lockdownDialogInit();"
 	ondialogaccept="return LeechBlock_lockdownOK();"
 	ondialogcancel="return LeechBlock_lockdownCancel();">
 

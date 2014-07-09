@@ -39,7 +39,7 @@
 
 // Handles lockdown dialog initialization
 //
-function LeechBlock_lockdownInit() {
+function LeechBlock_lockdownDialogInit() {
 	// Get current time in seconds
 	var now = Math.floor(Date.now() / 1000);
 
@@ -58,18 +58,17 @@ function LeechBlock_lockdownInit() {
 		window.close();
 	}
 
-	// Get preferences
+	// Get preferences about lockdown duration
 	var duration = LeechBlock_getIntPref("lockdownDuration");
-	var sets = LeechBlock_getIntPref("lockdownSets");
-
-	// Set component values
 	var hours = Math.floor(duration / 3600);
 	var mins = Math.floor(duration / 60) % 60;
 	document.getElementById("lb-lockdown-hours").value = hours;
 	document.getElementById("lb-lockdown-mins").value = mins;
+
+	// Get preferences about which sets to lock down
+	var sets = LeechBlock_getIntPref("lockdownSets");
 	for (var set = 1; set <= 6; set++) {
-		var lockdown = (sets & (1 << (set - 1))) != 0;
-		document.getElementById("lb-lockdown-set" + set).checked = lockdown;
+		document.getElementById("lb-lockdown-set" + set).checked = LeechBlock_isNthSetLockedDown(set);
 		document.getElementById("lb-lockdown-set" + set).label += " "
 				+ LeechBlock_getLockdownBlockSetLabel(set);
 	}
@@ -78,70 +77,57 @@ function LeechBlock_lockdownInit() {
 // Handles lockdown dialog OK button
 //
 function LeechBlock_lockdownOK() {
-	// Get component values
+	// Set preferences about the lockdown duration
 	var hours = document.getElementById("lb-lockdown-hours").value;
 	var mins = document.getElementById("lb-lockdown-mins").value;
 	var duration = hours * 3600 + mins * 60;
+	LeechBlock_setIntPref("lockdownDuration", duration);
+
+	// Set preferences about which sets to lock down
 	var sets = 0;
 	for (var set = 1; set <= 6; set++) {
 		var lockdown = document.getElementById("lb-lockdown-set" + set).checked;
 		if (lockdown) sets |= (1 << (set - 1));
 	}
-
-	// Set preferences
-	LeechBlock_setIntPref("lockdownDuration", duration);
 	LeechBlock_setIntPref("lockdownSets", sets);
 
+	LeechBlock_doStartLockdown();
+
+	return true;
+}
+
+// Actually starts a lockdown
+// 
+function LeechBlock_doStartLockdown() {
+	// Get lockdown preferences
+	var duration = LeechBlock_getIntPref("lockdownDuration");
+	
 	// Get current time in seconds
 	var now = Math.floor(Date.now() / 1000);
 
-	// Update time data for selected block sets
+	alert(now);
 	for (var set = 1; set <= 6; set++) {
-		var lockdown = document.getElementById("lb-lockdown-set" + set).checked;
+		alert(set);
+		if (LeechBlock_isNthSetLockedDown(set)) {
+			alert(set);
 
-		if (lockdown) {
-			// update time data for this set
-			var timedata = leechblock_getcharpref("timedata" + set).split(",");
+			// Update time data for this set
+			var timedata = LeechBlock_getCharPref("timedata" + set).split(",");
 			if (timedata.length == 5) {
 				timedata[4] = now + duration;
 			} else {
 				timedata = [now, 0, 0, 0, now + duration];
 			}
-			leechblock_setcharpref("timedata" + set, timedata.join(","));
+			LeechBlock_setCharPref("timedata" + set, timedata.join(","));
 		}
 	}
 
 	return true;
 }
 
-// Starts a lockdown
-function LeechBlock_startInstantLockdown() {
-	var duration = LeechBlock_getIntPref("lockdownDuration");
-	var sets = LeechBlock_getIntPref("lockdownSets");
-
-	// Set component values
-	var hours = Math.floor(duration / 3600);
-	var mins = Math.floor(duration / 60) % 60;
-	document.getElementById("lb-lockdown-hours").value = hours;
-	document.getElementById("lb-lockdown-mins").value = mins;
-	for (var set = 1; set <= 6; set++) {
-		var lockdown = (sets & (1 << (set - 1))) != 0;
-		document.getElementById("lb-lockdown-set" + set).checked = lockdown;
-		document.getElementById("lb-lockdown-set" + set).label += " "
-				+ LeechBlock_getLockdownBlockSetLabel(set);
-		if (lockdown) {
-			// update time data for this set
-			var timedata = leechblock_getcharpref("timedata" + set).split(",");
-			if (timedata.length == 5) {
-				timedata[4] = now + duration;
-			} else {
-				timedata = [now, 0, 0, 0, now + duration];
-			}
-			leechblock_setcharpref("timedata" + set, timedata.join(","));
-		}
-	}
-
-	return true;
+function LeechBlock_isNthSetLockedDown(n) {
+	var lockdownSets = LeechBlock_getIntPref("lockdownSets");
+	return (lockdownSets & (1 << (n - 1))) != 0;
 }
 
 // Handles lockdown dialog Cancel button

@@ -62,7 +62,7 @@
 			</menupopup>
 		</menu>
 		<menuitem id="leechblock-context-instant-lockdown" label="&menu.instantLockdown;"
-			oncommand="LeechBlock_startInstantLockdown();"/>
+			oncommand="LeechBlock_doStartLockdown();"/>
 	</popup>
 
 	<toolbarpalette id="BrowserToolbarPalette">
@@ -86,8 +86,10 @@
 				<description id="leechblock-time-left" value="--:--:--"/>
 			</hbox>
 		</toolbaritem>
-		<toolbarbutton id="leechblock-toolbar-instant-lockdown" label="&menu.instantLockdown;"
-			oncommand="LeechBlock_startInstantLockdown();"/>
+		<toolbarbutton id="leechblock-toolbar-instant-lockdown"
+			label="&menu.instantLockdown;"
+			class="toolbarbutton-1 chromeclass-toolbar-additional"
+			oncommand="LeechBlock_doStartLockdown();"/>
 	</toolbarpalette>
 
 </overlay>
