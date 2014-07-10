@@ -106,7 +106,7 @@ function LeechBlock_lockdownOK() {
 function LeechBlock_doStartLockdown() {
 	// Get lockdown preferences
 	var duration = LeechBlock_getIntPref("lockdownDuration");
-	
+
 	// Get current time in seconds
 	var now = Math.floor(Date.now() / 1000);
 
