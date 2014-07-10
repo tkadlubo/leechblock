@@ -40,18 +40,7 @@
 // Handles lockdown dialog initialization
 //
 function LeechBlock_lockdownDialogInit() {
-	// Get current time in seconds
-	var now = Math.floor(Date.now() / 1000);
-
-	// Check whether a lockdown is currently active
-	var endTime = 0;
-	for (var set = 1; set <= 6; set++) {
-		var timedata = LeechBlock_getCharPref("timedata" + set).split(",");
-		if (timedata.length == 5) {
-			endTime = Math.max(endTime, timedata[4]);
-		}
-	}
-	if (endTime > now) {
+	if (LeechBlock_isLockdownActive()) {
 		// Show alert dialog with end time
 		LeechBlock_alertLockdown(new Date(endTime * 1000).toLocaleString());
 		// Close lockdown dialog
@@ -72,6 +61,22 @@ function LeechBlock_lockdownDialogInit() {
 		document.getElementById("lb-lockdown-set" + set).label += " "
 				+ LeechBlock_getLockdownBlockSetLabel(set);
 	}
+}
+
+// Check whether a lockdown is currently active
+//
+function LeechBlock_isLockdownActive() {
+	// Get current time in seconds
+	var now = Math.floor(Date.now() / 1000);
+
+	var endTime = 0;
+	for (var set = 1; set <= 6; set++) {
+		var timedata = LeechBlock_getCharPref("timedata" + set).split(",");
+		if (timedata.length == 5) {
+			endTime = Math.max(endTime, timedata[4]);
+		}
+	}
+	return endTime > now;
 }
 
 // Handles lockdown dialog OK button
@@ -105,11 +110,8 @@ function LeechBlock_doStartLockdown() {
 	// Get current time in seconds
 	var now = Math.floor(Date.now() / 1000);
 
-	alert(now);
 	for (var set = 1; set <= 6; set++) {
-		alert(set);
 		if (LeechBlock_isNthSetLockedDown(set)) {
-			alert(set);
 
 			// Update time data for this set
 			var timedata = LeechBlock_getCharPref("timedata" + set).split(",");
