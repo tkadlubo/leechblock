@@ -6,6 +6,14 @@ toolbar[iconsize="small"] #leechblock-toolbar-button {
   list-style-image: url("chrome://leechblock/skin/leechblock16.png");
 }
 
+#leechblock-toolbar-start-lockdown {
+  list-style-image: url("chrome://leechblock/skin/leechblock24.png");
+}
+
+toolbar[iconsize="small"] #leechblock-start-lockdown {
+  list-style-image: url("chrome://leechblock/skin/leechblock16.png");
+}
+
 #leechblock-time-left {
 	background-color: #BBB;
 	border: 1px solid #808080;

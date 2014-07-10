@@ -62,7 +62,7 @@
 					oncommand="LeechBlock_openStatsDialog();"/>
 			</menupopup>
 		</menu>
-		<menuitem id="leechblock-context-instant-lockdown" label="&menu.instantLockdown;"
+		<menuitem id="leechblock-context-start-lockdown" label="&menu.instantLockdown;"
 			oncommand="LeechBlock_doStartLockdown();"/>
 	</popup>
 
@@ -87,7 +87,7 @@
 				<description id="leechblock-time-left" value="--:--:--"/>
 			</hbox>
 		</toolbaritem>
-		<toolbarbutton id="leechblock-toolbar-instant-lockdown"
+		<toolbarbutton id="leechblock-toolbar-start-lockdown"
 			label="&menu.instantLockdown;"
 			class="toolbarbutton-1 chromeclass-toolbar-additional"
 			oncommand="LeechBlock_doStartLockdown();"/>
