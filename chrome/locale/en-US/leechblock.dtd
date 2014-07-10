@@ -1,7 +1,7 @@
 <!ENTITY	leechblock					"LeechBlock">
 <!ENTITY	blockSet					"Block Set">
 <!ENTITY	menu.lockdown				"Lockdown…">
-<!ENTITY	menu.instantLockdown				"Start lockdown now">
+<!ENTITY	menu.instantLockdown				"Start Lockdown">
 <!ENTITY	menu.options				"Options…">
 <!ENTITY	menu.stats					"Statistics…">
 <!ENTITY	menu.addThisSiteLabel		"Add $S to $B">
