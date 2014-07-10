@@ -102,7 +102,7 @@ function LeechBlock_lockdownOK() {
 }
 
 // Actually starts a lockdown
-// 
+//
 function LeechBlock_doStartLockdown() {
 	// Get lockdown preferences
 	var duration = LeechBlock_getIntPref("lockdownDuration");
