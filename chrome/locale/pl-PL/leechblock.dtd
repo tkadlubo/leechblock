@@ -1,7 +1,7 @@
 <!ENTITY	leechblock					"LeechBlock">
 <!ENTITY	blockSet					"Zestaw blokowanych stron">
 <!ENTITY	menu.lockdown				"Blokada…">
-<!ENTITY	menu.instantLockdown				"Zacznij blokadę">
+<!ENTITY	menu.instantLockdown		"Zacznij blokadę">
 <!ENTITY	menu.options				"Opcje…">
 <!ENTITY	menu.stats					"Statystyki…">
 <!ENTITY	menu.addThisSiteLabel		"Dodaj $S do zestawu $B">
@@ -25,25 +25,28 @@
 <!ENTITY	options.customSetName		"Wpisz nazwę zestawu blokowanych stron (opcjonalne):">
 <!ENTITY	options.clearSetName		"Wyczyść nazwę">
 <!ENTITY	options.sitesDesc			"Enter the domain names of the sites to block (one item per line):">
+<!ENTITY	options.sitesDesc			"Wpisz nazwy domen stron, które chcesz blokować (w oddzielnych liniach):">
 <!ENTITY	options.sitesTooltip		"Use * as wildcard and + to prefix exceptions">
+<!ENTITY	options.sitesTooltip		"Można używać * jako symbolu wieloznacznego. Wyjątki należy poprzedzić znakiem +.">
 <!ENTITY	options.sitesLoadFromURL	"Wczytaj listę stron z adresu URL (opcjonalne):">
 <!ENTITY	options.sitesURLTooltip		"Use $S to pass block set number and $T to pass UTC timestamp in milliseconds">
 <!ENTITY	options.whenBlockDesc		"Krok 2: Kiedy chcesz blokować te strony?.">
 <!ENTITY	options.timesDesc			"Enter the time periods within which to block these sites (np. 0900-1230,1330-1700):">
+<!ENTITY	options.timesDesc			"Wpisz godziny w których chcesz blokować te strony (np. 0900-1230,1330-1700):">
 <!ENTITY	options.timesTooltip		"Leave blank for no time periods">
 <!ENTITY	options.allDayLabel			"Cały dzień">
 <!ENTITY	options.alertBadTimes		"Please enter the time periods in the correct format. Use 24-hour clock format (HHMM) for times, a dash (-) between start time and end time, and commas (,) or spaces to separate time periods.">
 <!ENTITY	options.confPrevOptsAllDay	"Czy na pewno zablokować dostęp do opcji przez cały dzień?">
 <!ENTITY	options.timeLimitDesc		"Enter a time limit after which to block these sites:">
 <!ENTITY	options.timeLimitTooltip	"Leave blank for no time limit">
-<!ENTITY	options.minsInEveryDesc		"minutes in every">
+<!ENTITY	options.minsInEveryDesc		"minut na">
 <!ENTITY	options.quarterHourMenuItem	"kwadrans (15 min.)">
 <!ENTITY	options.halfHourMenuItem	"pół godziny (30 min.)">
 <!ENTITY	options.hourMenuItem		"godzina">
 <!ENTITY	options.twoHoursMenuItem	"2 godziny">
 <!ENTITY	options.threeHoursMenuItem	"3 godziny">
 <!ENTITY	options.fourHoursMenuItem	"4 godziny">
-<!ENTITY	options.sixHoursMenuItem	"6 hours">
+<!ENTITY	options.sixHoursMenuItem	"6 godzin">
 <!ENTITY	options.halfDayMenuItem		"pół dnia (12 godzin)">
 <!ENTITY	options.dayMenuItem			"dzień (24 godziny)">
 <!ENTITY	options.twoDaysMenuItem		"2 dni (48 godzin)">
@@ -77,32 +80,32 @@
 <!ENTITY	options.advancedWarnDesc1	"Uwaga!">
 <!ENTITY	options.advancedWarnDesc2	"Be sure you understand the consequences of these options before selecting any of them.">
 <!ENTITY	options.accessControlLabel	"Kontrola dostępu">
-<!ENTITY	options.prevOptsLabel		"Prevent access to options for this block set at times when these sites are blocked">
-<!ENTITY	options.prevAddonsLabel		"Prevent access to about:addons at times when these sites are blocked">
-<!ENTITY	options.prevConfigLabel		"Zablokuj dostęp do strony about:config, gdy ten zestaw jest zablokowany.">
+<!ENTITY	options.prevOptsLabel		"Zablokuj dostęp do opcji tego zestawu stron, gdy jest on blokowany.">
+<!ENTITY	options.prevAddonsLabel		"Zablokuj dostęp do about:addons, gdy ten zestaw jest blokowany.">
+<!ENTITY	options.prevConfigLabel		"Zablokuj dostęp do strony about:config, gdy ten zestaw jest blokowany.">
 <!ENTITY	options.lockdownLabel		"Blokada">
 <!ENTITY	options.cancelLockdownLabel	"Anuluj aktualną blokadę">
-<!ENTITY	options.confCancelLockdown	"Are you sure you want to cancel the currently active lockdown for this block set?">
-<!ENTITY	options.optionsAccessLabel	"Options Access">
+<!ENTITY	options.confCancelLockdown	"Czy na pewno anulować aktualnie trwającą blokadę tego zestawu stron?">
+<!ENTITY	options.optionsAccessLabel	"Dostęp do opcji">
 <!ENTITY	options.accessDesc			"Select the requirement for access to options:">
 <!ENTITY	options.accessMenuItem0		"Don't require the user to enter any password or access code">
-<!ENTITY	options.accessMenuItem1		"Require the user to enter a password">
-<!ENTITY	options.accessMenuItem2		"Require the user to enter a random 32-character access code">
-<!ENTITY	options.accessMenuItem3		"Require the user to enter a random 64-character access code">
-<!ENTITY	options.accessMenuItem4		"Require the user to enter a random 128-character access code">
+<!ENTITY	options.accessMenuItem1		"Wymagaj wpisania hasła">
+<!ENTITY	options.accessMenuItem2		"Wymagaj wpisania losowego kodu dostępu o długości 32 znaków.">
+<!ENTITY	options.accessMenuItem3		"Wymagaj wpisania losowego kodu dostępu o długości 64 znaków.">
+<!ENTITY	options.accessMenuItem4		"Wymagaj wpisania losowego kodu dostępu o długości 128 znaków.">
 <!ENTITY	options.passwordDesc		"Wpisz hasło dostępu do opcji:">
 <!ENTITY	options.clearPasswordLabel	"Wyczyść hasło">
 <!ENTITY	options.hidePasswordLabel	"Ukrywaj znaki hasła w trakcie wpisywania">
 <!ENTITY	options.browserModsLabel	"Modyfikacje zachowania przeglądarki">
-<!ENTITY	options.hideExtension		"Hide LeechBlock extension in Add-ons Manager">
+<!ENTITY	options.hideExtension		"Ukryj rozszerzenie LeechBlock w managerze rozszerzeń">
 <!ENTITY	options.hideSafeMode		"Hide &quot;Restart with Add-ons Disabled…&quot; menu item (restart browser to apply new setting)">
 <!ENTITY	options.miscLabel			"Różne">
 <!--TODO glue into one message-->
 <!ENTITY	options.warnMessageDesc1	"Wyświetl ostrzeżenie na">
 <!ENTITY	options.warnMessageDesc2	"sekund przed zablokowaniem strony.">
-<!ENTITY	options.warnMessageTooltip	"Leave blank for no warning message">
-<!ENTITY	options.alertBadSeconds		"Please enter the number of seconds in the correct format (as a positive whole number).">
-<!ENTITY	options.showTimeLeftLabel	"Show time left before site is blocked in status bar">
+<!ENTITY	options.warnMessageTooltip	"Gdy pozostawisz puste, nie będzie ostrzeżenia.">
+<!ENTITY	options.alertBadSeconds		"Wpisz liczbę sekund w prawidłowym formacie (dodatnia liczba całkowita).">
+<!ENTITY	options.showTimeLeftLabel	"Pokazuj w pasku statusu czas pozotały do uruchomienia blokady.">
 <!ENTITY	options.blockEmbeddedLabel	"Block embedded pages (e.g. internal frames)">
 <!ENTITY	options.keepPageBackLabel	"Keep blocked page in browser's 'Back' history">
 <!ENTITY	options.hideContMenuLabel	"Hide LeechBlock context menu (restart browser to apply new setting)">
