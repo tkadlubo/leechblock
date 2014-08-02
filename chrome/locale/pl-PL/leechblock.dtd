@@ -37,8 +37,7 @@
 <!ENTITY	options.alertBadTimes		"Please enter the time periods in the correct format. Use 24-hour clock format (HHMM) for times, a dash (-) between start time and end time, and commas (,) or spaces to separate time periods.">
 <!ENTITY	options.confPrevOptsAllDay	"Czy na pewno zablokować dostęp do opcji przez cały dzień?">
 <!ENTITY	options.timeLimitDesc		"Wpisz limit czasu po upływie którego blokować te strony:">
-<!ENTITY	options.timeLimitTooltip	"Leave blank for no time limit">
-<!ENTITY	options.timeLimitTooltip	"Leave blank for no time limit">
+<!ENTITY	options.timeLimitTooltip	"Gdy pozostawisz puste nie będzie limitu czasu.">
 <!ENTITY	options.minsInEveryDesc		"minut na">
 <!ENTITY	options.quarterHourMenuItem	"kwadrans (15 min.)">
 <!ENTITY	options.halfHourMenuItem	"pół godziny (30 min.)">
@@ -87,11 +86,9 @@
 <!ENTITY	options.cancelLockdownLabel	"Anuluj aktualną blokadę">
 <!ENTITY	options.confCancelLockdown	"Czy na pewno anulować aktualnie trwającą blokadę tego zestawu stron?">
 <!ENTITY	options.optionsAccessLabel	"Dostęp do opcji">
-<!ENTITY	options.accessDesc			"Select the requirement for access to options:">
-<!ENTITY	options.accessDesc			"Select the requirement for access to options:">
-<!ENTITY	options.accessMenuItem0		"Don't require the user to enter any password or access code">
-<!ENTITY	options.accessMenuItem0		"Don't require the user to enter any password or access code">
-<!ENTITY	options.accessMenuItem1		"Wymagaj wpisania hasła">
+<!ENTITY	options.accessDesc			"Ustaw ograniczenia w dostępie do opcji:">
+<!ENTITY	options.accessMenuItem0		"Nie wymagaj wpisania hasła lub kodu dostępu">
+<!ENTITY	options.accessMenuItem1		"Wymagaj wpisania hasła.">
 <!ENTITY	options.accessMenuItem2		"Wymagaj wpisania losowego kodu dostępu o długości 32 znaków.">
 <!ENTITY	options.accessMenuItem3		"Wymagaj wpisania losowego kodu dostępu o długości 64 znaków.">
 <!ENTITY	options.accessMenuItem4		"Wymagaj wpisania losowego kodu dostępu o długości 128 znaków.">
