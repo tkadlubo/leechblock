@@ -29,12 +29,10 @@
 <!ENTITY	options.sitesLoadFromURL	"Wczytaj listę stron z adresu URL (opcjonalne):">
 <!ENTITY	options.sitesURLTooltip		"Przy pomocy $S możesz przekazać w adresie URL numer blokowanego zestawu. Podobnie $T przekaże znacznik czasu UTC w milisekundach.">
 <!ENTITY	options.whenBlockDesc		"Krok 2: Kiedy chcesz blokować te strony?.">
-<!ENTITY	options.timesDesc			"Wpisz godziny w których chcesz blokować te strony (np. 0900-1230,1330-1700):">
-<!ENTITY	options.timesTooltip		"Leave blank for no time periods">
-<!ENTITY	options.timesTooltip		"Leave blank for no time periods">
+<!ENTITY	options.timesDesc			"Wpisz zakres godzin, w których chcesz blokować te strony (np. 0900-1230,1330-1700):">
+<!ENTITY	options.timesTooltip		"Zostaw puste, by blokować cały dzień.">
 <!ENTITY	options.allDayLabel			"Cały dzień">
-<!ENTITY	options.alertBadTimes		"Please enter the time periods in the correct format. Use 24-hour clock format (HHMM) for times, a dash (-) between start time and end time, and commas (,) or spaces to separate time periods.">
-<!ENTITY	options.alertBadTimes		"Please enter the time periods in the correct format. Use 24-hour clock format (HHMM) for times, a dash (-) between start time and end time, and commas (,) or spaces to separate time periods.">
+<!ENTITY	options.alertBadTimes		"Wpisz zakresy godzin w prawidłowym formacie. Użyj 24-godzinnego zegara (GGMM). Oddziel początek i koniec zakresu myślnikiem (-), a poszczególne zakresy oddziel przecinkiem (,).">
 <!ENTITY	options.confPrevOptsAllDay	"Czy na pewno zablokować dostęp do opcji przez cały dzień?">
 <!ENTITY	options.timeLimitDesc		"Wpisz limit czasu po upływie którego blokować te strony:">
 <!ENTITY	options.timeLimitTooltip	"Gdy pozostawisz puste nie będzie limitu czasu.">
