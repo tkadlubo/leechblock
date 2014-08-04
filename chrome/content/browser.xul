@@ -61,8 +61,6 @@
 					oncommand="LeechBlock_openStatsDialog();"/>
 			</menupopup>
 		</menu>
-		<menuitem id="leechblock-context-instant-lockdown" label="&menu.instantLockdown;"
-			oncommand="LeechBlock_startInstantLockdown();"/>
 	</popup>
 
 	<toolbarpalette id="BrowserToolbarPalette">
@@ -86,8 +84,6 @@
 				<description id="leechblock-time-left" value="--:--:--"/>
 			</hbox>
 		</toolbaritem>
-		<toolbarbutton id="leechblock-toolbar-instant-lockdown" label="&menu.instantLockdown;"
-			oncommand="LeechBlock_startInstantLockdown();"/>
 	</toolbarpalette>
 
 </overlay>
